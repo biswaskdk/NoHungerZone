@@ -1,0 +1,38 @@
+/* CSS for Zero Hunger Marketplace */
+
+/* Global styles */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Comic Sans MS", cursive;
+}
+
+/* Navbar styles */
+.w3-bar-item {
+  padding: 8px 16px;
+}
+
+.w3-bar-item:hover {
+  background-color: #ddd;
+}
+
+/* Header styles */
+.w3-xxlarge {
+  margin: 0;
+}
+
+/* Page content styles */
+.w3-padding {
+  padding: 8px 16px;
+}
+
+.w3-border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Form styles */
+.w3-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+}

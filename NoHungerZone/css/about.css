@@ -1,0 +1,246 @@
+/* Reset default styles and set font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Rubik", sans-serif;
+    color: #444;
+    scroll-behavior: smooth;
+}
+
+/* Container styles for centering content and defining maximum width */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header styles for background and text */
+header {
+    height: 84vh; /* Adjusted height */
+    position: relative;
+    background-image: linear-gradient(
+        rgba(215, 213, 213, 0.6),
+        rgba(68, 67, 67, 0.696)
+    );
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px; /* Adjusted padding */
+}
+
+.header-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header h1 {
+    font-size: 52px;
+    margin-bottom: 16px; /* Adjusted margin */
+    line-height: 1.2;
+}
+
+.about-section {
+    padding: 50px 0; /* Adjusted padding */
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 9px;
+}
+
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+}
+
+section {
+    padding: 96px 0;
+    background-color: #f7f7f7;
+}
+
+/* Centering the "Our Mission" section */
+.about-section {
+    text-align: center;
+}
+.cause-section {
+    margin-bottom: 50px; /* Add some space below the cause section */
+}
+
+.cause-heading {
+    color: #333;
+}
+
+.cause-description {
+    font-style: italic;
+}
+
+.about-heading {
+    color: #063a26; /* Adjust the color for emphasis */
+}
+
+.stats-heading {
+    margin-top: 20px; /* Add some space between the description and the stats heading */
+    color: #022502; /* Adjust the color for emphasis */
+}
+
+.stats-description {
+    font-weight: bold;
+}
+/* CSS for the impact box */
+/* CSS for the impact box */
+.impact-box {
+    text-align: center;
+    margin-top: 30px; /* Adjust margin top as needed */
+    margin-bottom: 30px;
+}
+
+.impact-box span {
+    font-weight: bold;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.impact-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #25660c;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: inline-block;
+}
+/* CSS for the impact section */
+.impact-section {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: #f7f7f7; /* Light gray background color */
+}
+
+.impact-section h2 {
+    font-size: 28px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Adjust margin bottom as needed */
+}
+
+.impact-description {
+    text-align: justify; /* Justify text for better readability */
+}
+
+.impact-description p {
+    margin-bottom: 20px; /* Adjust margin bottom between paragraphs */
+}
+/* CSS for centering the impact and cause section titles */
+.impact-section h2, .cause-section h2 {
+    text-align: center; /* Center the titles */
+}
+.impact-section {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green; /* Adjust color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+/* CSS for the team section */
+.team-section {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member {
+    flex-basis: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.team-member-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-member-university {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.team-member-slogan {
+    font-style: italic;
+    color: #333;
+    font-size: 14px;
+}
+.social-media-section {
+    text-align: center;
+}
+
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+}
+
+.social-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Media query for screens with a maximum width of 768px (commonly used for mobile devices) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
+body {
+            background-color:#ffefd5;
+            margin: 0;
+            padding: 0;
+        }

@@ -1,0 +1,324 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+#header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hero.jpg'); /* Set hero image */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Logo Styles */
+.logo-container {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+.logo {
+    height: 200px;
+    width: 190px;
+}
+
+.logo-black {
+    display: none;
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute;
+    top: 60px;
+    right: 300px;
+    font-family: 'Roboto', sans-serif; /* Change the font family to Roboto */
+}
+
+.main-nav {
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Background Text Box Styles */
+.background-text-box {
+    position: absolute;
+    bottom: 300px;
+    left: 30%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+}
+
+.background-text-box h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    color:rgb(16, 167, 16);
+}
+
+.background-text-box h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-full {
+    background-color: orange;
+    color: #fff;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: orange;
+    border: 2px solid orange;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Media Query for Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-black {
+        display: inline-block;
+        height: 50px;
+    }
+
+    .main-nav {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.section-promotion {
+    background-color: #fff; /* White background */
+    padding: 50px 0; /* Add padding to the top and bottom */
+}
+
+.section-promotion .row {
+    text-align: center; /* Center align the text */
+    margin-bottom: 40px; /* Add margin at the bottom */
+}
+
+.section-promotion h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em; /* Larger font size */
+    color: rgb(16, 167, 16);
+}
+
+.section-promotion .long-copy {
+    color: rgb(0, 0, 0); /* Dark grey color */
+    font-size: 1.1em; /* Font size */
+    line-height: 1.6; /* Line height */
+    margin-bottom: 20px; /* Add margin at the bottom */
+    margin-top: 10px;
+    padding-left: 100px; /* Add padding to the left */
+    padding-right: 100px; /* Add padding to the right */
+}
+
+.section-promotion .js--wp-1 {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.section-promotion .col {
+    flex: 1; /* Take up equal space */
+}
+
+.section-promotion .stats-list {
+    list-style: none; /* Remove list style */
+    padding-left: 0; /* Remove default padding */
+}
+
+.section-promotion .stats-list li {
+    color: rgb(108, 110, 109); /* Dark grey color */
+    font-size: 1.1em; /* Font size */
+    line-height: 1.6; /* Line height */
+    margin-bottom: 10px; /* Add margin at the bottom */
+}
+.section-promotion {
+    padding-left: 100px; /* Add padding to the left side */
+    padding-right: 100px; /* Add padding to the right side */
+}
+.box p {
+    text-align: center; /* Justify the text content inside the boxes */
+}
+
+.calculation-matrix {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.calculation-matrix .box {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 100%; /* Set the width to 100% */
+    max-width: 300px; /* Adjust the max-width as needed */
+}
+
+
+.calculation-matrix .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(16, 167, 16);
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.calculation-matrix .box .metric {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+    white-space: nowrap; /* Ensure text does not wrap */
+}
+.calculation-matrix .box .number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(16, 167, 16);
+    margin-top: 2000px;
+}
+.green-bg {
+    background-color: orange; /* Green background color */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Rounded corners */
+    color: #fff; /* White text color */
+}
+.calculation-matrix .box p {
+    text-align: center; /* Justify the text content inside the boxes */
+    margin-top: 50px; /* Add margin to the top */
+}
+/* Testimonials Section */
+.section-testimonials {
+    position: relative; /* Ensure positioning context */
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden; /* Ensure the background image doesn't overflow */
+}
+
+/* Background Image */
+.section-testimonials::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('back1111.jpg'); /* Set the background image */
+    background-size: cover; /* Ensure the background covers the entire section */
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3; /* Adjust the opacity as needed */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: -1; /* Place the overlay behind other content */
+}
+
+.section-testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    color:orangered; /* Adjust the color of the heading */
+}
+
+.section-testimonials .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-testimonials .col {
+    flex-basis: calc(33.333% - 40px);
+    margin-bottom: 40px;
+}
+
+.section-testimonials blockquote {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(5, 5, 5); /* Adjust text color to be visible against the overlay */
+}
+
+.section-testimonials cite {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section-testimonials cite img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
